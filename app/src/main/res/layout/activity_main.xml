@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#705335"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alumno"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#1f3d61"
+        />
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese su nombre"
+        />
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:hint="Ingrese su codigo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notas"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#1f3d61"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+        <EditText
+            android:id="@+id/txtNota1"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="Nota conceptual"
+            android:gravity="center"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/txtNota2"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="Nota Procedimental"
+            android:gravity="center"
+            android:layout_marginLeft="200dp"
+            android:inputType="number"
+            />
+
+    </RelativeLayout>
+        <EditText
+            android:id="@+id/txtNota3"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:hint="Nota Actitudinal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            />
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:onClick="evento"
+        />
+    <TextView
+        android:id="@+id/etiBienvenido"
+        android:layout_marginTop="40dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        />
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        >
+        <TextView
+           android:id="@+id/etiNombre"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="200dp"
+            android:id="@+id/etiCodigo"
+            android:textSize="30dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/etiPromedio"
+        android:layout_marginTop="40dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
